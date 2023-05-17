@@ -57,7 +57,7 @@ h2, h3, h4{
 .container{
     max-width: 400px;
     margin: 0 auto;
-    background-color: white;
+    background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
     padding: 40px;
     box-shadow: 10px 5px 10px rgb(216, 216, 233);
     border-radius: 20px;
