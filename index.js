@@ -13,7 +13,7 @@ function changeDate(event) {
 <div class="date" id="date">${dateZone}</div>
 </div>                        
 <div class="time" id="time">${time}<small>PM</small></div>
-    </div>`;
+    </div> <a href="/">back to homepage</a>`;
 }
 let cityElement = document.querySelector("#city");
 cityElement.addEventListener("change", changeDate);
