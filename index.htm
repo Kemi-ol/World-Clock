@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock</title>
   </head>
   <body>
@@ -14,31 +15,24 @@
     <label for="">Check your current time</label>
     <select name="cities" id="city">
     <option value="">Select a city</option>
-    <option value="london">London</option>
-    <option value="sydney">Sydney</option>
-    <option value="paris">Paris</option>
+    <option value="Europe/London">London</option>
+    <option value="Australia/Sydney">Sydney</option>
+    <option value="America/New_York">New York</option>
     </select>
     <div class="city" id="los-angeles">
         <div>
 <h2>Los Angeles 🇺🇸 </h2>
-<div class="date">May 10th 2023</div>
+<div class="date" id="losDate"></div>
 </div>
-<div class="time"> 21:30:06 <small>PM</small></div>
+<div class="time" id="losTime"> <small></small></div>
     </div>
      <div class="city" id="tokyo">
         <div>
 <h3>Tokyo 🇯🇵 </h3>
-<div class="date">May 11th 2023</div>
+<div class="date" id="tokyo-date">May 11th 2023</div>
 </div>
-<div class="time"> 23:03:09 <small>PM</small></div>
-    </div>
-     <div class="city">
-        <div>
-<h4>Canada 🇨🇦 </h4>
-<div class="date">May 10th 2023</div>
-</div>
-<div class="time"> 21:30:06 <small>PM</small></div>
-    </div>
+<div class="time" id="tokyo-time"> 23:03:09 <small>PM</small></div>
+    
     </div>
     </div>
     <footer>
