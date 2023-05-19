@@ -34,5 +34,14 @@ setInterval(function () {
   londonTime.innerHTML = moment
     .tz("Europe/London")
     .format("HH:mm:ss [<small>]A[</small>]");
+}
+//france
+let franceDate = document.querySelector("#france-date");
+  let franceTime = document.querySelector("#france-time");
+  if(franceDate){
+  franceDate.innerHTML = moment.tz("Europe/Paris").format("MMMM Do, YYYY");
+  franceTime.innerHTML = moment
+    .tz("Europe/Paris")
+    .format("HH:mm:ss [<small>]A[</small>]");
 }}, 1000);
 
